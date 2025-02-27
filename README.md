@@ -1,2 +1,9 @@
 # BaseMonitorSystem
-For building the platform
+构建监控系统软件
+
+四大模块：
+1. 数据输入与预处理
+2. 目标检测
+3. 目标跟踪
+4. 后处理：自动标注、可视化
+5. 日志
