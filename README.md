@@ -2,6 +2,7 @@
 构建监控系统软件
 
 #安装步骤
+
 1.安装Anaconda：https://repo.anaconda.com/archive/
   或Miniconda：https://docs.conda.io/en/latest/miniconda.html  #对版本没有要求
 2. conda create -n Env python=3.7 -y  #创建虚拟环境python版本推荐3.7（已测试）
