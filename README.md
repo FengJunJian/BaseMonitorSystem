@@ -15,14 +15,14 @@
 
 
 #1船舶检测##############################
-1.1 python run.py --flagShow --modelname detModel/expMAllM.model --saveDir save --img TestData/demoShipDet.jpg --video TestData/DSC_6186.MOV#单文件模式 file.avi file.mov均可
+1.1 python run.py --flagShow --modelname detModel/YOLOS.model --saveDir save --img TestData/demoShipDet.jpg --video TestData/DSC_6186.MOV#单文件模式 file.avi file.mov均可
 或
-1.2 python run.py --img %.jpg --modelname detModel/expMAllM.model --saveDir save --video TestData/%.MOV#批量文件模式 %.avi\%.mov均可
-1.3 python run.py --modelname detModel/expMAllM.model --saveDir save --log Detlog.log --video TestData/DSC_6186.MOV #单视频
+1.2 python run.py --img %.jpg --modelname detModel/YOLOS.model --saveDir save --video TestData/%.MOV#批量文件模式 %.avi\%.mov均可
+1.3 python run.py --modelname detModel/YOLOS.model --saveDir save --log Detlog.log --video TestData/DSC_6186.MOV #单视频
 
 #************************************************************#
 #2船舶检测+船舷号识别############################
-2.1 python run.py --flagOCR --modelname detModel/expMAllM.model --modelpath . --flagShow --img TestData/%.jpg --video TestData/%.avi --saveDir saveT#单文件模式：文件为绝对路径，批量模式：路径/%.avi(%代替所有任意名字，视频后缀avi/mov均可)
+2.1 python run.py --flagOCR --modelname detModel/YOLOS.model --modelpath . --flagShow --img TestData/%.jpg --video TestData/%.avi --saveDir saveT#单文件模式：文件为绝对路径，批量模式：路径/%.avi(%代替所有任意名字，视频后缀avi/mov均可)
 
 
 
