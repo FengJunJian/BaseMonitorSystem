@@ -13,7 +13,6 @@
 7. 船舶检测与船舷号识别，分别包含两种运行方式：单文件执行和批量文件执行
 
 
-
 #1船舶检测##############################
 1.1 python run.py --flagShow --modelname detModel/YOLOS.model --saveDir save --img TestData/demoShipDet.jpg --video TestData/DSC_6186.MOV#单文件模式 file.avi file.mov均可
 或
@@ -23,7 +22,6 @@
 #************************************************************#
 #2船舶检测+船舷号识别############################
 2.1 python run.py --flagOCR --modelname detModel/YOLOS.model --modelpath . --flagShow --img TestData/%.jpg --video TestData/%.avi --saveDir saveT#单文件模式：文件为绝对路径，批量模式：路径/%.avi(%代替所有任意名字，视频后缀avi/mov均可)
-
 
 
 #************************************************************#
