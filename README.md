@@ -14,6 +14,7 @@
 
 
 #1船舶检测##############################
+
 1.1 python run.py --flagShow --modelname detModel/YOLOS.model --saveDir save --img TestData/demoShipDet.jpg --video TestData/DSC_6186.MOV#单文件模式 file.avi file.mov均可
 或
 1.2 python run.py --img %.jpg --modelname detModel/YOLOS.model --saveDir save --video TestData/%.MOV#批量文件模式 %.avi\%.mov均可
@@ -21,16 +22,23 @@
 
 #************************************************************#
 #2船舶检测+船舷号识别############################
+
 2.1 python run.py --flagOCR --modelname detModel/YOLOS.model --modelpath . --flagShow --img TestData/%.jpg --video TestData/%.avi --saveDir saveT#单文件模式：文件为绝对路径，批量模式：路径/%.avi(%代替所有任意名字，视频后缀avi/mov均可)
 
 
 #************************************************************#
 
-8.结果文件输出 --saveDir路径下
+#3.结果文件输出 #######
+
+控制参数：--saveDir
+
 #船舶检测##############################
+
 输出json文件格式：[xmin,ymin,xmax,ymax,置信度,类别
 
+
 #船舷号识别############################
+
 输出json文件格式：[(x1,y1),(x2,y2),(x3,y3),(x4,y4),置信度,文本]#矩形的四个顶点
 
 
